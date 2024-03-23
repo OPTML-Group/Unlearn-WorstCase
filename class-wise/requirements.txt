@@ -1,0 +1,15 @@
+terminaltables
+pytorch_pfn_extras
+fastargs
+matplotlib
+scikit-learn
+imgcat
+pandas
+assertpy
+tqdm
+psutil
+webdataset
+torchmetrics
+fastargs @ git+https://github.com/Phoveran/fastargs.git
+ffcv
+openpyxl

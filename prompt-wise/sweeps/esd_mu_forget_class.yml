@@ -1,0 +1,35 @@
+name: esd_mu_style38_forget_class
+project: quick-canvas-machine-unlearning
+command:
+- ${interpreter}
+- ${program}
+- ${args}
+- "--train_method=noxattn"
+method: grid
+metric:
+  goal: minimize
+  name: loss
+parameters:
+  object_class:
+    values:
+      - Architectures
+      - Bears
+      - Birds
+      - Butterfly
+      - Cats
+      - Dogs
+      - Fishes
+      - Flame
+      - Flowers
+      - Frogs
+      - Horses
+      - Human
+      - Jellyfish
+      - Rabbits
+      - Sandwiches
+      - Sea
+      - Statues
+      - Towers
+      - Trees
+      - Waterfalls
+program: stable_diffusion/train-scripts/train-esd-class.py

@@ -1,0 +1,52 @@
+{
+    "network": {
+        "architecture": "resnet18",
+        "blurpool": 0
+    },
+    "dataset": {
+        "train_path": "",
+        "val_path": "",
+        "num_workers": 12,
+        "in_memory": 0,
+        "prune": 1,
+        "indices": {
+            "training": "",
+            "testing": ""
+        }
+    },
+    "train": {
+        "seed": 43856,
+        "epoch": 88,
+        "batch_size": 1024,
+        "label_smoothing": 0.0,
+        "scheduler_type": "cyclic",
+        "optimizer": {
+            "lr": 0.5,
+            "weight_decay": 5e-05,
+            "momentum": 0.9
+        },
+        "scheduler": {
+            "step": {
+                "step_ratio": null,
+                "step_size": null
+            },
+            "cyclic": {
+                "lr_peak_epoch": 2
+            }
+        },
+        "resolution": {
+            "min_res": 160,
+            "max_res": 192,
+            "end_ramp": 76,
+            "start_ramp": 65
+        }
+    },
+    "validation": {
+        "batch_size": 512,
+        "resolution": 256,
+        "lr_tta": 0
+    },
+    "logging": {
+        "save_intermediate_frequency": null
+    }
+}
