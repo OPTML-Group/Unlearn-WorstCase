@@ -34,9 +34,10 @@ pip install -r requirements.txt
 ## Quick start
 - The indices of the worst-case forget set are available in the `indices` folder.
 - The format of the indices is a list, named as `{dataset name}_{forgetting ratio}%`.
-- :warning: For CIFAR-10 and CIFAR-100, it is necessary to first split the dataset into training and validation set in a 9:1 ratio before using the indices.
 
-```
+:warning: For CIFAR-10 and CIFAR-100, it is necessary to first split the dataset into training and validation set in a 9:1 ratio before using the indices.
+```bash
+seed = 1
 train_valid_set = CIFAR10(data_dir, train=True, transform=train_transform, download=True)
 
 # split the dataset into training and validation set
