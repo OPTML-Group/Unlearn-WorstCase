@@ -30,30 +30,3 @@ pip install -r requirements.txt
     python main_evalmu.py --arch resnet18 --dataset cifar10 --cp_path results/cifar10_resnet/origin/0model_SA_best.pth.tar --unlearn retrain --num_indexes_to_replace 4500 --unlearn_steps 182 --theta_lr 0.1 --w_path results/cifar10_resnet/data-wise/select_weight.pth.tar --save_dir results/cifar10_resnet/evaluation
     ```
     If **w_path** is not specified, the origin model will unlearn on random forget set.
-
-## Quick start
-- The indices of the worst-case forget set are available in the `indices` folder.
-- The format of the indices is a list, named as `{dataset name}_{forgetting ratio}%`.
-
-:warning: For CIFAR-10 and CIFAR-100, it is necessary to first split the dataset into training and validation set in a 9:1 ratio before using the indices.
-```bash
-seed = 1
-train_valid_set = CIFAR10(data_dir, train=True, transform=train_transform, download=True)
-
-# split the dataset into training and validation set
-rng = np.random.RandomState(seed)
-valid_idx = []
-for i in range(max(train_valid_set.targets) + 1):
-    class_idx = np.where(train_valid_set.targets == i)[0]
-    valid_idx.append(
-        rng.choice(class_idx, int(0.1 * len(class_idx)), replace=False)
-    )
-valid_idx = np.hstack(valid_idx)
-train_idx = list(set(range(len(train_valid_set))) - set(valid_idx))
-train_set = Subset(train_valid_set, train_idx)
-
-# load the indices of the worst-case forget set
-with open('indices/cifar10_10%.pkl', 'rb') as f:
-    forget_idx = pickle.load(f)
-forget_set = Subset(train_set, forget_idx)
-```
