@@ -33,13 +33,13 @@ The trustworthy machine learning (ML) community is increasingly recognizing the 
 
 ## Using indices directly
 - The indices of the worst-case forget set are available [here](https://drive.google.com/drive/folders/12wpgzG24zYTkeRHIjlYucUlr38rDdKQe?usp=sharing).
-- The format of the indices is a list, named as `{dataset name}_{forgetting data amount}`.
+- The format of the indices is a list, named as `{dataset name}_{forgetting data amount}_forget/remain`.
 
 ```bash
 train_set = CIFAR10(data_dir, train=True, transform=train_transform, download=True)
 
 # load the indices of the worst-case forget set
-with open('cifar10_4500.pkl', 'rb') as f:
+with open('cifar10_4500_forget.pkl', 'rb') as f:
     forget_idx = pickle.load(f)
 forget_set = Subset(train_set, forget_idx)
 ```
