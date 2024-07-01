@@ -3,8 +3,11 @@
 # Challenging Forgets: Unveiling the Worst-Case Forget Sets in Machine Unlearning
 
 [![preprint](https://img.shields.io/static/v1?label=arXiv&message=2403.07362&color=B31B1B)](https://arxiv.org/abs/2403.07362)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![project page](https://img.shields.io/badge/Project_Page-In%20Progress-green)](https://github.com/OPTML-Group/Unlearn-WorstCase)
+[![issues](https://img.shields.io/badge/Issues-Welcome!-yellow)](https://github.com/OPTML-Group/Unlearn-WorstCase/issues)
 
+[![Venue:ECCV 2024](https://img.shields.io/badge/Venue-ECCV%202024-blue)](https://eccv.ecva.net/Conferences/2024)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://github.com/OPTML-Group/Unlearn-WorstCase?tab=MIT-1-ov-file)
 [![GitHub top language](https://img.shields.io/github/languages/top/OPTML-Group/Unlearn-WorstCase)](https://github.com/OPTML-Group/Unlearn-WorstCase)
 [![GitHub repo size](https://img.shields.io/github/repo-size/OPTML-Group/Unlearn-WorstCase)](https://github.com/OPTML-Group/Unlearn-WorstCase)
 [![GitHub stars](https://img.shields.io/github/stars/OPTML-Group/Unlearn-WorstCase)](https://github.com/OPTML-Group/Unlearn-WorstCase)
