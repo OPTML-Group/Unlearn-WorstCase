@@ -23,7 +23,7 @@
 </table>
 </div>
 
-Welcome to the official repository of paper *"Challenging Forgets: Unveiling the Worst-Case Forget Sets in Machine Unlearning"*.
+Welcome to the official repository of the ECCV 2024 paper *"Challenging Forgets: Unveiling the Worst-Case Forget Sets in Machine Unlearning"*.
 
 ## Abstract
 
