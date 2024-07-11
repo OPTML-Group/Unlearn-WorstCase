@@ -38,7 +38,7 @@ The trustworthy machine learning (ML) community is increasingly recognizing the 
 - The indices of the worst-case forget set are available [here](https://drive.google.com/drive/folders/12wpgzG24zYTkeRHIjlYucUlr38rDdKQe?usp=sharing).
 - The format of the indices is a list, named as `{dataset name}_{forgetting data amount}_forget/remain`.
 
-```bash
+```python
 train_set = CIFAR10(data_dir, train=True, transform=train_transform, download=True)
 
 # load the indices of the worst-case forget set
@@ -46,6 +46,9 @@ with open('cifar10_4500_forget.pkl', 'rb') as f:
     forget_idx = pickle.load(f)
 forget_set = Subset(train_set, forget_idx)
 ```
+
+## Supplementary materials
+For appendix in ECCV camera-ready version, please refer to [pdfs/appendix.pdf](pdfs/appendix.pdf).
 
 ## Contributors
 * [Chongyu Fan](https://a-f1.github.io/)
