@@ -9,5 +9,5 @@ def retrain(data_loaders, model, criterion, optimizer, epoch, args, mask):
     return train(retain_loader, model, criterion, optimizer, epoch, args, mask)
 
 @w_iterative_unlearn
-def w_retrain(train_loader, model, criterion, optimizer, epoch, args, w):
-    return w_train(train_loader, model, criterion, optimizer, epoch, args, w)
+def w_retrain(train_loader, model, criterion, optimizer, epoch, args, w, mask):
+    return w_train(train_loader, model, criterion, optimizer, epoch, args, w, mask)

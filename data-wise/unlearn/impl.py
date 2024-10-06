@@ -4,10 +4,8 @@ import copy
 
 import matplotlib.pyplot as plt
 import numpy as np
-import pruner
 import torch
 import utils
-from pruner import extract_mask, prune_model_custom, remove_prune
 
 import torch.nn.functional as F
 
