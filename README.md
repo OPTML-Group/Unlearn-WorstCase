@@ -25,7 +25,7 @@
 Welcome to the official repository of the ECCV 2024 paper *"Challenging Forgets: Unveiling the Worst-Case Forget Sets in Machine Unlearning"*.
 
 ## News ## 
-:mega: Check out our [latest work](https://github.com/OPTML-Group/Unlearn-Smooth) at ICML 2025 on making LLM unlearning more robust through smoothness optimization!
+:mega: Check out our [ICML 2025 paper](https://github.com/OPTML-Group/Unlearn-Smooth) on making LLM unlearning more robust through smoothness optimization!
 
 ## Abstract
 
